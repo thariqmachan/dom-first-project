@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <!-- <h1>LUMINAR TECHNOLAB</h1>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore veritatis ipsam magnam eius in similique officiis qui totam possimus dolore dicta aut perspiciatis debitis velit, quia dolores ducimus animi aperiam!
+        </p>
+    </div>
+    <div>
+        <h1 id="q1">luminar </h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, ullam accusantium in reprehenderit sit ipsam quaerat a, saepe ad qui sint eligendi eum. Voluptatem voluptates, odio laboriosam harum nihil fugit.</p>
+    </div> -->
+
+
+    <div>
+        <input type="text" id="w1" placeholder="age">
+        <button type="button" onclick="ageCheck()">check</button>
+    </div>
+</body>
+
+<script>
+    function ageCheck(){
+        // age=parseInt(document.getElementById('w1').value)
+        age=parseInt(w1.value)    //used instead of dom method , simly just call the id value
+        if(age>=18){
+            alert(`eligible, age is ${age}`)
+        }
+        else{
+            alert(`Not eligible, age is ${age}`)
+        }
+        // alert(typeof(age))
+        // alert("buton clicked")
+    }
+</script>
+</html>

@@ -1,0 +1,58 @@
+DOCUMENT OBJECT MODEL (DOM)
+-------------------------
+it creates a dom before providing us an output page in the browser for an html page , 
+dom is like a tree structure representing all the content inside the html as parent  and childrens 
+
+
+in order to make the dom dynamic we hv to access each element like h1 or div 
+
+dom methods
+-------------
+    -object
+    -document.getElementsByTagName('tagNmae')
+    -document.getElementsByclassName('className')
+    -document.getElementById('Id')
+    -document.querySelector('tagName/.className/#Id')   // this is applicable for every 3 forms like tagname , classname nd Id , but only one tagname/classname can be called using this way
+    -document.querySelectorAll('tagName/.className/#Id') //used for mentoning multiple tagname/classname at a time
+
+
+EVENTS
+-------
+we use this when we want output when clicking a button 
+- onClick("function name()")
+
+<script>
+    function ageCheck(){
+        age=parseInt(document.getElementById('w1').value)
+        if(age>=18){               // condition
+            alert("eligible")
+        }
+        else{
+            alert("not eligible")
+        }
+        // alert(typeof(age))    //type of enteed object
+        // alert("buton clicked")
+    }
+</script>
+
+
+age=parseInt(document.getElementById('w1').value)  // value to get access the value
+
+
+ if(age>=18){
+            alert(`eligible, age is ${age}`)    //babtic is used to display the entered value also
+        }
+        else{
+            alert(`Not eligible, age is ${age}`)
+        }
+
+
+
+
+ age=parseInt(w1.value)    //used instead of dom method , simly just call the id value
+
+
+
+
+<button type="button" onclick="ageCheck()">check</button>  //type button should be given inorder to make d button work
+
